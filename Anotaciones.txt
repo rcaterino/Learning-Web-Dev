@@ -1,0 +1,55 @@
+Esta es mi primer proyecto web y lo voy a dedicar exclusivamente para documentar cada parte del curso que me parezca importante o relevante, realizando el ejercicio práctico dentro de este mismo proyecto. De esta manera, podré ir llenándolo de contenidos en la misma medida que voy aprendiendo. 
+
+Como valor agregado, este proyecto me serviré de espacio para practicar día a día, porque así como un atleta entrena para alcanzar su máximo estado de forma de cara a una competencia, la mejor manera de mejorar constantemente como programador es practicando, es decir, entrenando cada día escribiendo código y aplicando soluciones. Es más; ya que lo pienso, los programadores podrían parecerse un poco a los raperos que compiten en batallas de freestyle, ya que estos entrenando improvisando rimas on distintas terminaciones, temáticas, conceptos abstractos, palabras, etc, para tener la habilidad de construir respuestas mucho más rápido si les toca responder durante una batalla sobre algo  que ya habían practica antes. Lo cual no quiere decir que se las aprendan de memoria o se las escriban, simplemente, ese ejercicio de plantearse problemas y crear una solución va ejercitando nuestro cerebro y cuando nos toca en un evento real enfrentar ese problema, responderemos mucho más rápido debido a que ya tuvimos una experiencia previa.
+
+Bueno, ya sin más, voy al lío.
+
+¿Qué es HTML?
+HTML es un <strong>lenguaje de marcado</strong> que por sus siglas en inglés se llama <strong>HyperText Markup Languaje</strong> y es el lenguaje en el que está escrito el documento que lee el navegador, ya que cuando entramos a una página web, lo que sucede es que el navegador web está pidiendo un documento donde se encuentra almacenada esa página.
+
+Entonces, si HTML es un lenguaje con el que se escribe el documento que contiene la información de una página web, el cual es leído por el navegador, ¿Cómo es que se escribe? ¿cual es su estructura? 
+
+Básicamente, una página web se puede comparar con una estantería, la cuál podría ser el cuerpo de la página, la cuál podría componerse en varios niveles o espacios, que a su vez, podrían tener o dividirse en varias secciones.
+
+Pués bién, entrando en materia, la base de un documento HTML son las <strong>Etiquetas HTML</strong>, las cuales se utilizan para declarar que tipo de contenido será el que va a mostrar al usuario. por tal motivo, la sintaxis utilizada para escribir en Lenguaje HTML es la siguiente:
+
+<etiqueta>Contenido</etiqueta>
+
+Como podemos apreciar, el nombre de la etiqueta se escribe entre los signos < y > para abrir el contenido y al finalizar se debe escribir la etiqueta de cierra con la barra / inmediatamente después del signo <. Ejemplo:
+
+<p>Párrafo</p>
+
+Dicho esto, si tienes conocimientos mínimos de programación te parecerá obvio que las etiquetas no se pueden escribir con cualquier palabra como etiqueta, ya que existen específicas, cada una con un onjetivo.
+
+Existen etiquetas que pueden tener atributos, los cuales pueden ser de caracter obligatorios u opcionales. Estos atributos establecen alguna información sobre la etiqueta o el comportamiento que esta debe tener y casi siempre van asociadas a un valor. Por tanto, la etiqueta quedaría con la siguiente estructura:
+
+<etiqueta id="valor> contenido </etiqueta>
+
+En resumen, ya dijimos que en lenguaje HTML utilizamos etiquetas para declarar el contenido que queremos para cada zona o bloque de la página, pero ¿como debería estructurarse? el código básico que escribimos para crear inicialmente una página web en lenguaje HTML es el siguiente:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Este es mi primer título en HTML</h1>
+</body>
+</html>
+
+Donde:
+* <!DOCTYPE html> Informa al navegador que versión de HTML se usó.
+* <html lang="en"> Le indica al navegador que todo el contenido de la página web está en inglés.
+* <head> Es la etiqueta donde escribimos todo aquello que no se muestra en el navegador cuando se carga la página. La principal función de esta etiqueta es dar la descripción del sitio web, para que sea más facil de acceder a través del navegador.
+* <meta charset="UTF-8"> Lo utilizamos para declarar el uso de lenguas con alfabeto germánico o latino.
+* <title>Document</title> la etiqueta Title nos permite establecer o darle un título a la página, el cuál se escribirá en la barra de título del navegador y se mostrará en las páginas de resultados de los buscadores.
+* <body> Representa a todo el contenido del documento HTML para ser mostrado por el navegador y solo puede 1 elemento <body> en el documento HTML
+* <h1> esta etiqueta se utiliza para declarar un Título principal.
+
+Como vemos, cada página web comienza con  la etiqueta <HTML> y dentre de ella van <head> y <body>, donde el head se escribe la información sobre el documento que no se muestra al usuario paro que es relevante para su funcionamiento; y en el body va todo el contenido que se mostrará al usuario a través del navegador. De esto también podemos darnos cuenta que dentro de una etiqueta podemos contener una o varias etiquetas con contenidos adicionales. Para entenderlo mejor con un ejemplo gráfico, dejo a continuación la sigiente imágen (codigo html para mostrar la imagen: <img src="imagenes/estructura.jpg">:
+
+
+
+
+Esto es practicamente todo sobre lenguaje HTML desde el punto de visto conceptual sobre lo que realmente es HTML. En este punto ya se estructurar una página web con su emcabezado, pié de página, barra de navegación, el contenido principal con sus distintas secciones o apartados.

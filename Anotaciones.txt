@@ -25,6 +25,8 @@ Existen etiquetas que pueden tener atributos, los cuales pueden ser de caracter 
 
 <etiqueta id="valor> contenido </etiqueta>
 
+Son muchísimas las etiquetas que existen para estructurar el contenido en el documento HTML, según sea lo que se necesito hacer con ese contenido, un párrafo, una sección, un botón, listas, formularios, entre muchas otras que iremos viendo con el pasar de este curso y trataré de dejar por aquí un ejemplo de cada uno mostrando el resultado.
+
 En resumen, ya dijimos que en lenguaje HTML utilizamos etiquetas para declarar el contenido que queremos para cada zona o bloque de la página, pero ¿como debería estructurarse? el código básico que escribimos para crear inicialmente una página web en lenguaje HTML es el siguiente:
 
 <!DOCTYPE html>

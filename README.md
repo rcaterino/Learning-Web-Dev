@@ -1,7 +1,7 @@
 # Learning-Web-Dev
 Este es un repositorio sobre mi inicio como desarrollador web y por eso lo he llamado: "Web development learning repository"
 
-Quisiera comenzar dándote un gran saludo y las gracias por estás leyendo esto. Si estás aquí es porque encontraste mi repositorio sobre mis apuntes hechos durante el curso de desarrollo web con HTML, CSS y JS.
+Quisiera comenzar dándote un gran saludo y las gracias porque estás leyendo esto. Si estás aquí es porque encontraste el repositorio sobre mis apuntes hechos durante el curso de desarrollo web con HTML, CSS y JS.
 
 Con este proyecto y su repositorio, lo que pretendo es compartir mis apuntes con otras personas que también se estén iniciando en este maravilloso mundo del desarrollo web y que puedan con él, lograr entender y aprender de una manera fácil.
 

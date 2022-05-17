@@ -84,19 +84,19 @@
                 </p>
             </section>
         </article>
-        <form action="send"><!--Este formulario no funcionará en este momento, imagino que funcionara en la página de Anotaciones sobre JAvaScript porque asumo que será en esa parte del curso donde aprenderé darle funcionalidad a la página-->
+        <form action="send"><!--Esta etiqueta se utiliza para declarar un formulario. Este formulario no funcionará de momento, ya que el action="send" llama a una ejecución que no existe y por esto debería llevarnos a una página de error. Imagino que funcionara en la página de Anotaciones sobre JAvaScript porque asumo que será en esa parte del curso donde aprenderé darle funcionalidad a la página-->
             <p>
                 Si tienes alguna sugerencia o comentario sobre este contenido, bien sea para aportar elementos de valor y enriquecerlo, así como sugerencias constructivas para mejorarlo y aportar al conocimiento de todos, no dudes en escribirme un comentario a continuación y si quisieras contactarme, déjamelo saber con tu email y me pondré en contacto contigo
             </p>
 
-            Nombre:<input type="Nombre" placeholder="Tu nombre" required><br>
+            Nombre:<input type="text" placeholder="Tu nombre" required><br><!--Las etiquetas <input> son etiquetas de captura de datos y según su atributo type, puede recibir distintos tipos de datos pero los valores más comunes son text, email, radios, password, url, hidden, textarea, tel, search. Además, se pueden establecer como obligatorio con el atributo required-->
             Usuario GitHub para seguirte:<input type="user GitHub" placeholder="tu usuario en GitHub para seguirte" required><br>
-            e-mail:<input type="e-mail" placeholder="tu e-mail"><br>
-            Comentario:<input type="Comentario" required placeholder="Dime tu aporte, estaré muy agradecido por tu contribución con mi aprendizaje"><br>
+            e-mail:<input type="email" placeholder="tu e-mail"><br>
+            Comentario:<input type="textarea" required placeholder="Dime tu aporte, estaré muy agradecido por tu contribución con mi aprendizaje"><br>
             Acepto recibir respuesta <label><input type="radio"></label><br>
             <button type="submit">Enviar</button>
         </form>
-        <aside>
+        <aside><!--Etiqueta que declara lo que debería ser la barra lateral o una barra de navegación alternativa a la barra de navegación principal. Entiendo que se utiliza para mostrar contenido secundario o darle mejor usabilidad a la página. Dependiendo de la página, por ejemplo en tiendas virtuales algunas muestras enlaces a subcategorías, en otras páginas se utiliza el aside para motrar contenido publicitario. Iremos viendo con el pasar del curso otros posibles usos -->
             <h2>Tabla de contenido</h2>
             <ul>
                 <li><a href="#lenguajehtml">Lenguaje HTML</a></li><!--En esta ocasión, le asignamos en el valor del atributo a la etiqueta de enlace, el id asignado a la sección dentro de esta misma página donde queremos dirigir al usuario. Hice esto porque como la página es extensa y se puede ir el usuario muy abajo, pretendo que esta tabla de contenido funcione como una barra de navegación lateral para que el usuario pueda navegar dentre de esta misma página-->

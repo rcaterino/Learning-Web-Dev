@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"><!--Etiqueta utilizada para especificar el idioma de la página web, en mi caso como escribo en castellano pues lo establezco como "es"-->
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="UTF-8"> <!--esta etiqueta sirve para especificar configuración del teclado que aceptará el navegador, este específicamente para páginas escritas en castellano u otro idioma que utilice acentos, la letra ñ, entre otros caracteres específicos del idioma-->
+    <meta name="author" content="Ricardo Caterino Polini"><!--etiqueta que identifica al autor de la página web y es utilizada para ser mostrada en la información de resumen que muestra el navegador, en la sección de resultados o en páginas de búsqueda donde se especifíque el autor de la página-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotaciones de mi curso sobre Desarrollo Web con HTML5, CSS3 y Javascript</title><!--esta etiqueta se utiliza para especificar el título de nuestra página, el cual se mostrará en la barra de título del navegador-->
 </head>
 <body>
-    <h1>Anotaciones de mi curso sobre Desarrollo Web</h1>
+    <nav><!--Etiqueta de barra de navegación-->
+        <ul>
+            <li><a href="index.html">Mis apuntes sobre HTML</a></li><!--la etiqueta <a> es una etiqueta de enlace, para redirigir al usuario a una página específica, en este caso, nos enocontramos en la barra de navegación y con href="index.html" le decimos a la página que al hacer click sobre el link que se llama Página solo HTML -->
+            <li><a href="Página con CSS.html">Mis apuntes sobre CSS</a></li><!--Esta etiqueta envía al usuario hacia la página que incorpora estilos CSS y mis anotaciones en ella-->
+            <li><a href="Página con CSS y JS.html">Mis apuntes sobre JS</a></li><!--Esta etiqueta envía al usuario hacia la página con mis anotaciones y que incorpora estilos CSS y JS-->
+        </ul>
+    </nav>
+    <article>
+        <section>
+            <h1>Anotaciones de mi curso sobre <strong>Web con HTML5, CSS3 y Javascript</strong></h1> <!--En estaparte ya comenzamos a juntar etiquetas dentro de otra etiqueta, como es el caso de la etiqueta <strong>, la cual sirve para darle relevancia al contenido dentro de ella, la cuál a su vez se encuentra dentro de la etiqueta de título <h1>, que es el nivel más alto de relevancia dentro de las etiquetas de este tipo, las cuales cuentan con 6 niveles, es decir, van desde <h1> hasta <h6>-->
+        </section>
+        <section> 
+            <div><!--dentro de esta sección de contenido, como voy a abregar un contenido en párrafos algo extenso, decidí utilizar la etiqueta <div> para dividir en varios bloques el contenido; esto con la intención de poder posteriormente agregarles estilos CSS cuando comience ese curso. Por ahora lo dejaré así y ya luego tomaré una decisión sobre si cambiarlo o dejarlo así-->
+                <h2>Lenguaje HTML</h2>
+                <p>
+                    Esta es <strong>mi primer proyecto web</strong> y lo voy a dedicar exclusivamente para documentar cada parte del curso que me parezca importante o relevante, realizando el ejercicio práctico dentro de este mismo proyecto. De esta manera, podré ir llenándolo de contenidos en la misma medida que voy aprendiendo.  Además, lo compartiré en GitHub, para que otras personas que quieran iniciarse en este mundo tan interesante del desarrollo web.
+                    <br>
+                    <br><!--Esta etiqueta sirve para agregar una linea en blanco de separación entre párrafos-->
+                    Bueno, ya sin más, voy al lío.
+                </p>
+            </div>
+            <div>
+                <h2>¿Qué es HTML?</h2>
+                <p>
+                    HTML es un lenguaje de marcado que por sus siglas en inglés se llama Hyper Text Markup Languaje y es el lenguaje en el que está escrito el documento que lee el navegador, ya que cuando entramos a una página web, lo que sucede es que el navegador web está pidiendo un documento donde se encuentra almacenada esa página.<br>
+                    <br>
+                    Entonces, si HTML es un lenguaje con el que se escribe el documento que contiene la información de una página web, el cual es leído por el navegador, ¿Cómo es que se escribe? ¿cuál es su estructura?<br>
+                    Básicamente, una página web se puede comparar con una estantería, la cual podría ser el cuerpo de la página, la cual podría componerse en varios niveles o espacios que, a su vez, podrían tener o dividirse en varias secciones.<br>
+                    <br>
+                    Pues bien, entrando en materia, la base de un documento HTML son las Etiquetas HTML, las cuales se utilizan para declarar que tipo de contenido será el que va a mostrar al usuario. por tal motivo, la sintaxis utilizada para escribir en Lenguaje HTML es la siguiente:
+                </p>
+                <img src="imagenes/etiquetaHTML.jpg"><!--etiqueta <img> que sirve para incluir una imagen, se puede inclueir desde un archivo local o de internet especificando la ruta completa de acceso a la imagen-->
+                <p>
+                    Como podemos apreciar, el nombre de la etiqueta se escribe entre los signos < y > para abrir el contenido y al finalizar se debe escribir la etiqueta de cierra con la barra / inmediatamente después del signo <. Ejemplo:
+                </p>
+                <img src="imagenes/parrafoHTML.jpg">
+                <p>
+                    Dicho esto, si tienes conocimientos mínimos de programación te parecerá obvio que las etiquetas no se pueden escribir con cualquier palabra como etiqueta, ya que existen específicas, cada una con un objetivo.<br>
+                    <br>
+                    Existen etiquetas que pueden tener atributos, los cuales pueden ser de carácter obligatorios u opcionales. Estos atributos establecen alguna información sobre la etiqueta o el comportamiento que esta debe tener y casi siempre van asociadas a un valor. Por tanto, la etiqueta quedaría con la siguiente estructura:
+                </p>
+                <img src="imagenes/etiquetaHTMLatributos.jpg">
+                <p>
+                    Son muchísimas las etiquetas que existen para estructurar el contenido en el documento HTML, según sea lo que se quiera hacer con ese contenido, un párrafo, una sección, un botón, listas, formularios, entre muchas otras que iremos viendo con el pasar de este curso y trataré de dejar por aquí un ejemplo de cada uno mostrando el resultado. Algunas otras se me ocurra explicarlas con comentarios directamente en el código HTML y así se puede ver en vivo comparando este código con lo que vemos en el navegador.<br>
+                    <br>
+                    En resumen, ya dijimos que en lenguaje HTML utilizamos etiquetas para declarar el contenido que queremos para cada zona o bloque de la página, pero ¿cómo debería estructurarse? el código básico que escribimos para dar inicio a la creación de una página web con lenguaje HTML es el siguiente:<br>
+                </p>
+                <img src="imagenes/HTMLinicial.jpg">
+            </div>
+        </section>
+    </article>
 </body>
 </html>

@@ -16,57 +16,46 @@
         </ul>
     </nav>
     <header>
-        <img src="imagenes/header.jpg"><!--etiqueta <img> que sirve para incluir una imagen, se puede inclueir desde un archivo local o de internet especificando la ruta completa de acceso a la imagen-->
+        <img src="imagenes/header.jpg" style="max-width:100%;width:auto;height:auto;"><!--etiqueta <img> que sirve para incluir una imagen, se puede inclueir desde un archivo local o de internet especificando la ruta completa de acceso a la imagen-->
         <h1>Anotaciones de mi curso sobre <strong>Desarrollo Web con HTML5, CSS3 y Javascript</strong></h1><!--En estaparte ya comenzamos a juntar etiquetas dentro de otra etiqueta, como es el caso de la etiqueta <strong>, la cual sirve para darle relevancia al contenido dentro de ella, la cuál a su vez se encuentra dentro de la etiqueta de título <h1>, que es el nivel más alto de relevancia dentro de las etiquetas de este tipo, las cuales cuentan con 6 niveles, es decir, van desde <h1> hasta <h6>-->
     </header>
     <main>
         <article>
             <section><!--dentro de esta artículo de contenido, como voy a abregar información en párrafos algo extenso, decidí utilizar la etiqueta <section> para dividir en varios bloques el contenido; esto con la intención de poder posteriormente agregarles estilos CSS cuando comience ese curso. Por ahora lo dejaré así y ya luego tomaré una decisión sobre si cambiarlo o dejarlo así-->
                 <h2 id="lenguajehtml">Lenguaje HTML</h2>
-                <p>
-                    Esta es <strong>mi primer proyecto web</strong> y lo voy a dedicar exclusivamente para documentar cada parte del curso que me parezca importante o relevante, realizando el ejercicio práctico dentro de este mismo proyecto. De esta manera, podré ir llenándolo de contenidos en la misma medida que voy aprendiendo.  Además, lo compartiré en GitHub, para que otras personas que quieran iniciarse en este mundo tan interesante del desarrollo web.
-                    <br>
+                <p>Esta es <strong>mi primer proyecto web</strong> y lo voy a dedicar exclusivamente para documentar cada parte del curso que me parezca importante o relevante, realizando el ejercicio práctico dentro de este mismo proyecto. De esta manera, podré ir llenándolo de contenidos en la misma medida que voy aprendiendo.  Además, lo compartiré en GitHub, para que otras personas que quieran iniciarse en este mundo tan interesante del desarrollo web.
                     <br><!--Esta etiqueta sirve para agregar una linea en blanco de separación entre párrafos-->
-                    Bueno, ya sin más, voy al lío.
-                </p>
+                Bueno, ya sin más, voy al lío.</p>
             </section>
             <section>
                 <h2 id="definicion">¿Qué es HTML?</h2>
-                <p>
-                    HTML es un lenguaje de marcado que por sus siglas en inglés se llama Hyper Text Markup Languaje y es el lenguaje en el que está escrito el documento que lee el navegador, ya que cuando entramos a una página web, lo que sucede es que el navegador web está pidiendo un documento donde se encuentra almacenada esa página.
+                <p>HTML es un lenguaje de marcado que por sus siglas en inglés se llama Hyper Text Markup Languaje y es el lenguaje en el que está escrito el documento que lee el navegador, ya que cuando entramos a una página web, lo que sucede es que el navegador web está pidiendo un documento donde se encuentra almacenada esa página.
                     
-                    Entonces, si HTML es un lenguaje con el que se escribe el documento que contiene la información de una página web, el cual es leído por el navegador, ¿Cómo es que se escribe? ¿cuál es su estructura?
+                Entonces, si HTML es un lenguaje con el que se escribe el documento que contiene la información de una página web, el cual es leído por el navegador, ¿Cómo es que se escribe? ¿cuál es su estructura?
 
-                    Básicamente, una página web se puede comparar con una estantería, la cual podría ser el cuerpo de la página, la cual podría componerse en varios niveles o espacios que, a su vez, podrían tener o dividirse en varias secciones.
+                Básicamente, una página web se puede comparar con una estantería, la cual podría ser el cuerpo de la página, la cual podría componerse en varios niveles o espacios que, a su vez, podrían tener o dividirse en varias secciones.
                     
-                    Pues bien, entrando en materia, la base de un documento HTML son las Etiquetas HTML, las cuales se utilizan para declarar que tipo de contenido será el que va a mostrar al usuario. por tal motivo, la sintaxis utilizada para escribir en Lenguaje HTML es la siguiente:
-                </p>
+                Pues bien, entrando en materia, la base de un documento HTML son las Etiquetas HTML, las cuales se utilizan para declarar que tipo de contenido será el que va a mostrar al usuario. por tal motivo, la sintaxis utilizada para escribir en Lenguaje HTML es la siguiente:</p>
                 
-                <img src="imagenes/etiquetaHTML.jpg">
-                <p>
-                    Como podemos apreciar, el nombre de la etiqueta se escribe entre los signos &lt; y > para abrir el contenido y al finalizar se debe escribir la etiqueta de cierra con la barra / inmediatamente después del signo &lt;. Ejemplo:
-                </p>
+                <img src="imagenes/etiquetaHTML.jpg" style="max-width:100%;width:auto;height:auto;"><!--El atributo style="max-width:100%;width:auto;height:auto;" nos permite decirle al navegador que el tamaño máximo de la imagen será del 100% del ancho del navegador y que tanto la altura y anchura se ajustarán automáticamente al tamaño del navegador, con lo cual se logra que la imagen se ajuste al tamaño de pantalla que el usuario tenga. Esta es la forma de darle algo de responsividad a la página desde HTML pero no me quiero meter en estas aguas todavía ya que eso lo haremos con estilos CSS y JS más adelante-->
+                <p>Como podemos apreciar, el nombre de la etiqueta se escribe entre los signos &lt; y > para abrir el contenido y al finalizar se debe escribir la etiqueta de cierra con la barra / inmediatamente después del signo &lt;. Ejemplo:</p>
                 
-                <img src="imagenes/parrafoHTML.jpg">
-                 <p>
-                    Dicho esto, si tienes conocimientos mínimos de programación te parecerá obvio que las etiquetas no se pueden escribir con cualquier palabra como etiqueta, ya que existen específicas, cada una con un objetivo.
+                <img src="imagenes/parrafoHTML.jpg" style="max-width:100%;width:auto;height:auto;">
+                 <p>Dicho esto, si tienes conocimientos mínimos de programación te parecerá obvio que las etiquetas no se pueden escribir con cualquier palabra como etiqueta, ya que existen específicas, cada una con un objetivo.
                     
-                    Existen etiquetas que pueden tener atributos, los cuales pueden ser de carácter obligatorios u opcionales. Estos atributos establecen alguna información sobre la etiqueta o el comportamiento que esta debe tener y casi siempre van asociadas a un valor. Por tanto, la etiqueta quedaría con la siguiente estructura:
-                </p>
+                Existen etiquetas que pueden tener atributos, los cuales pueden ser de carácter obligatorios u opcionales. Estos atributos establecen alguna información sobre la etiqueta o el comportamiento que esta debe tener y casi siempre van asociadas a un valor. Por tanto, la etiqueta quedaría con la siguiente estructura:</p>
                 
-                <img src="imagenes/etiquetaHTMLatributos.jpg">
+                <img src="imagenes/etiquetaHTMLatributos.jpg" style="max-width:100%;width:auto;height:auto;">
             </section>
             <section>
                 <h2 id="etiquetas">Etiquetas HTML</h2>
-                <p>
-                    Son muchísimas las etiquetas que existen para estructurar el contenido en el documento HTML, se suelen clasificar en Etiquetas semánticas, etiquetas multimedia, etiquetas de cabecera, etiquetas de formulario y etiquetas de scripting.
+                <p>Son muchísimas las etiquetas que existen para estructurar el contenido en el documento HTML, se suelen clasificar en Etiquetas semánticas, etiquetas multimedia, etiquetas de cabecera, etiquetas de formulario y etiquetas de scripting.
 
-                    Voy a tratar de practicar cada una de ellas con el devenir del curso y dejarlo todo registrado en esta página.
+                Voy a tratar de practicar cada una de ellas con el devenir del curso y dejarlo todo registrado en esta página.
                     
-                    En resumen, ya dijimos que en lenguaje HTML utilizamos etiquetas para declarar el contenido que queremos para cada zona o bloque de la página, pero ¿cómo debería estructurarse? el código básico que escribimos para dar inicio a la creación de una página web con lenguaje HTML es el siguiente:
-                </p>
+                En resumen, ya dijimos que en lenguaje HTML utilizamos etiquetas para declarar el contenido que queremos para cada zona o bloque de la página, pero ¿cómo debería estructurarse? el código básico que escribimos para dar inicio a la creación de una página web con lenguaje HTML es el siguiente:</p>
                 
-                <img src="imagenes/HTMLinicial.jpg">
+                <img src="imagenes/HTMLinicial.jpg" style="max-width:100%;width:auto;height:auto;">
                 <p>
                     <b>Donde:</b>
                     <ul><!--Esta etiqueta se utiliza para definir una lista no ordenada, crea una caja en bloque y puede contener uno o más elementos. Si queremos hacer una lista ordenada numéricamente, la etiqueta sería <ol>-->
@@ -85,16 +74,13 @@
             </section>
         </article>
         <form action="send"><!--Esta etiqueta se utiliza para declarar un formulario. Este formulario no funcionará de momento, ya que el action="send" llama a una ejecución que no existe y por esto debería llevarnos a una página de error. Imagino que funcionara en la página de Anotaciones sobre JAvaScript porque asumo que será en esa parte del curso donde aprenderé darle funcionalidad a la página-->
-            <p>
-                Si tienes alguna sugerencia o comentario sobre este contenido, bien sea para aportar elementos de valor y enriquecerlo, así como sugerencias constructivas para mejorarlo y aportar al conocimiento de todos, no dudes en escribirme un comentario a continuación y si quisieras contactarme, déjamelo saber con tu email y me pondré en contacto contigo
-            </p>
-
-            Nombre:<input type="text" placeholder="Tu nombre" required><br><!--Las etiquetas <input> son etiquetas de captura de datos y según su atributo type, puede recibir distintos tipos de datos pero los valores más comunes son text, email, radios, password, url, hidden, textarea, tel, search. Además, se pueden establecer como obligatorio con el atributo required-->
-            Usuario GitHub para seguirte:<input type="user GitHub" placeholder="tu usuario en GitHub para seguirte" required><br>
-            e-mail:<input type="email" placeholder="tu e-mail"><br>
-            Comentario:<input type="textarea" required placeholder="Dime tu aporte, estaré muy agradecido por tu contribución con mi aprendizaje"><br>
-            Acepto recibir respuesta <label><input type="radio"></label><br>
-            <button type="submit">Enviar</button>
+            <p>Si tienes alguna sugerencia o comentario sobre este contenido, bien sea para aportar elementos de valor y enriquecerlo, así como sugerencias constructivas para mejorarlo y aportar al conocimiento de todos, no dudes en escribirme un comentario a continuación y si quisieras contactarme, déjamelo saber con tu email y me pondré en contacto contigo</p>
+            <input type="text" placeholder="Tu nombre" required><br><br><!--Las etiquetas <input> son etiquetas de captura de datos y según su atributo type, puede recibir distintos tipos de datos pero los valores más comunes son text, email, radios, password, url, hidden, textarea, tel, search. Además, se pueden establecer como obligatorio con el atributo required-->
+            <input type="user GitHub" placeholder="Usuario en GitHub para seguirte" required><br><br>
+            <input type="email" placeholder="tu e-mail"><br><br>
+            <textarea name="comentario" rows="10" cols="50">Dime tu aporte, estaré muy agradecido por tu contribución con mi aprendizaje</textarea><br><br>
+            <label><input type="checkbox" required>Acepto recibir feedback sobre mi comentario/aporte</label><br><br>
+            <button type="submit">Enviar tu aporte</button><br><br>
         </form>
         <aside><!--Etiqueta que declara lo que debería ser la barra lateral o una barra de navegación alternativa a la barra de navegación principal. Entiendo que se utiliza para mostrar contenido secundario o darle mejor usabilidad a la página. Dependiendo de la página, por ejemplo en tiendas virtuales algunas muestras enlaces a subcategorías, en otras páginas se utiliza el aside para motrar contenido publicitario. Iremos viendo con el pasar del curso otros posibles usos -->
             <h2>Tabla de contenido</h2>
@@ -103,10 +89,14 @@
                 <li><a href="#definicion">¿Qué es HTML?</a></li>
                 <li><a href="#etiquetas">Etiquetas HTML</a></li>
             </ul>
+            <h2>Cursos en YouTube que me vi completos</h2>
+            <p>A continuación te dejo enlaces hacia algunos videos de cursos sobre HTML que me ví completos y me sirvieron de base para comenzar, con lo cuál quiero además aprovechar este espacio para agradecer a quienes se dedican a crear estos contenidos de inmenso valor educativo y que utilizan estas plataformas digitales para enseñar a otros e inspirarnos a seguir luchando por ser mejores, aprender nuevos oficios o adquirir una nueva habilidad, así que de verdad muchísimas gracias porque creadores de contenidos como ustedes fueron fundamentales para que decidiera dar el primer paso y luego quisiera seguir con la formación aprendiendo más. ¡Gracias totales!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XqFR2lqBYPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </aside>
     </main>
     <footer>
-
+        <p><small><b>Creado por Ricardo Fabio Caterino Polini - Sin derechos de autor</b></small></p>
     </footer>
 </body>
 </html>

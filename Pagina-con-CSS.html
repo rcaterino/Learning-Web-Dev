@@ -1,30 +1,31 @@
-<!DOCTYPE html><!--Esta etiqueta identifica el archivo como un documento HTML y le ordena al navegador que ódigo va a interpretar-->
-<html lang="es"><!--Etiqueta utilizada para especificar el idioma de la página web, en mi caso como escribo en castellano pues lo establezco como "es"-->
-<head><!--provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. También el idioma de la página, la descripción, las palabras claves, entre otro tipo de información importante para la correcta ejecución de la página, pero que no es visible para el usuario-->
-    <meta charset="UTF-8"> <!--esta etiqueta sirve para especificar configuración del teclado que aceptará el navegador, este específicamente para páginas escritas en castellano u otro idioma que utilice acentos, la letra ñ, entre otros caracteres específicos del idioma-->
-    <meta name="author" content="Ricardo Caterino Polini"><!--etiqueta que identifica al autor de la página web y es utilizada para ser mostrada en la información de resumen que muestra el navegador, en la sección de resultados o en páginas de búsqueda donde se especifíque el autor de la página-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Ricardo Caterino Polini">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Básicamente, sirve para definir qué área de pantalla está disponible al renderizar un documento, cuál es nivel de escalado que puede realizar el usuario, así como si el navegador debe mostrarla con algún zoom inicial.-->
-    <title>Anotaciones de mi curso sobre Desarrollo Web con HTML5, CSS3 y Javascript</title><!--esta etiqueta se utiliza para especificar el título de nuestra página, el cual se mostrará en la barra de título del navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotaciones de mi curso sobre Desarrollo Web con HTML5, CSS3 y Javascript</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav><!--Etiqueta de barra de navegación-->
+    <nav>
         <ul>
-            <li><a href="index.html">Mis apuntes sobre HTML</a></li><!--la etiqueta <a> es una etiqueta de enlace, para redirigir al usuario a una página específica, en este caso, nos enocontramos en la barra de navegación y con href="index.html" le decimos a la página que al hacer click sobre el link que se llama Página solo HTML -->
-            <li><a href="Pagina-con-CSS.html" target="_blank">Mis apuntes sobre CSS</a></li><!--Esta etiqueta envía al usuario hacia la página que incorpora estilos CSS y mis anotaciones en ella. Adicional, le agregamos el atributo target y le asignamos el valor blank, esto lo que hace es abrir el enlace en una nueva página, esto es más útil cuando queremos compartir enlaces a sitios externos y no queremos que el usuario se vaya de nuestro sitio, entonces lo enviamos a ese enlace a través de otra página. Hicimos esto aquí para aprender el concepto-->
-            <li><a href="Pagina-con-CSS-y-JS.html">Mis apuntes sobre JavaScript</a></li><!--Esta etiqueta envía al usuario hacia la página con mis anotaciones y que incorpora estilos CSS y JS-->
+            <li><a href="index.html">Mis apuntes sobre HTML</a></li>
+            <li><a href="Pagina-con-CSS.html">Mis apuntes sobre CSS</a></li>
+            <li><a href="Pagina-con-CSS-y-JS.html">Mis apuntes sobre JavaScript</a></li>
         </ul>
     </nav>
-    <header>
-        <img src="imagenes/header.jpg"><!--etiqueta <img> que sirve para incluir una imagen, se puede inclueir desde un archivo local o de internet especificando la ruta completa de acceso a la imagen-->
-        <h1>Anotaciones de mi curso sobre <strong>Desarrollo Web con HTML5, CSS3 y Javascript</strong></h1><!--En estaparte ya comenzamos a juntar etiquetas dentro de otra etiqueta, como es el caso de la etiqueta <strong>, la cual sirve para darle relevancia al contenido dentro de ella, la cuál a su vez se encuentra dentro de la etiqueta de título <h1>, que es el nivel más alto de relevancia dentro de las etiquetas de este tipo, las cuales cuentan con 6 niveles, es decir, van desde <h1> hasta <h6>-->
+    <header>  
+        <img src="imagenes/header.jpg">
+        <h1>Anotaciones de mi curso sobre <strong>Desarrollo Web con HTML5, CSS3 y Javascript.</strong></h1>
     </header>
     <main>
         <article>
-            <section><!--dentro de esta artículo de contenido, como voy a abregar información en párrafos algo extenso, decidí utilizar la etiqueta <section> para dividir en varios bloques el contenido; esto con la intención de poder posteriormente agregarles estilos CSS cuando comience ese curso. Por ahora lo dejaré así y ya luego tomaré una decisión sobre si cambiarlo o dejarlo así-->
+            <section>
                 <h2 id="lenguajehtml">Lenguaje HTML</h2>
                 <p>Esta es <strong>mi primer proyecto web</strong> y lo voy a dedicar exclusivamente para documentar cada parte del curso que me parezca importante o relevante, realizando el ejercicio práctico dentro de este mismo proyecto. De esta manera, podré ir llenándolo de contenidos en la misma medida que voy aprendiendo.  Además, lo compartiré en GitHub, para que otras personas que quieran iniciarse en este mundo tan interesante del desarrollo web.
-                    <br><!--Esta etiqueta sirve para agregar una linea en blanco de separación entre párrafos-->
+                    <br>
                 Bueno, ya sin más, voy al lío.</p>
             </section>
             <section>
@@ -37,7 +38,7 @@
                     
                 Pues bien, entrando en materia, la base de un documento HTML son las Etiquetas HTML, las cuales se utilizan para declarar que tipo de contenido será el que va a mostrar al usuario. por tal motivo, la sintaxis utilizada para escribir en Lenguaje HTML es la siguiente:</p>
                 
-                <img src="imagenes/etiquetaHTML.jpg" style="max-width:100%;width:auto;height:auto;"><!--El atributo style="max-width:100%;width:auto;height:auto;" nos permite decirle al navegador que el tamaño máximo de la imagen será del 100% del ancho del navegador y que tanto la altura y anchura se ajustarán automáticamente al tamaño del navegador, con lo cual se logra que la imagen se ajuste al tamaño de pantalla que el usuario tenga. Esta es la forma de darle algo de responsividad a la página desde HTML pero no me quiero meter en estas aguas todavía ya que eso lo haremos con estilos CSS y JS más adelante-->
+                <img src="imagenes/etiquetaHTML.jpg" style="max-width:100%;width:auto;height:auto;">
                 <p>Como podemos apreciar, el nombre de la etiqueta se escribe entre los signos &lt; y > para abrir el contenido y al finalizar se debe escribir la etiqueta de cierra con la barra / inmediatamente después del signo &lt;. Ejemplo:</p>
                 
                 <img src="imagenes/parrafoHTML.jpg" style="max-width:100%;width:auto;height:auto;">
@@ -58,10 +59,9 @@
                 <img src="imagenes/HTMLinicial.jpg" style="max-width:100%;width:auto;height:auto;">
                 <p>
                     <b>Donde:</b>
-                    <ul><!--Esta etiqueta se utiliza para definir una lista no ordenada, crea una caja en bloque y puede contener uno o más elementos. Si queremos hacer una lista ordenada numéricamente, la etiqueta sería <ol>-->
-                        <li><b>&lt;"DOCTYPE html"&gt;:</b> Informa al navegador que versión de HTML se usó. </li><!--En este código encontramos la instrucción &lt; y se utiliza para poder mostrar en el texto el signo < y luego utilizamos la instrucción &gt; que escribe el signo >. Esto debido a que si escribimos la etiqueta con su sintaxis normal, el navegador la interpretará ni lo mostrará la descripción de la etiqueta como texto en el párrafo  -->
-                        <li><b>&lt;Head&gt;:</b> Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.
-                        </li> <!--El elemento li del ingles item list o elemento de lista declara cada uno de los elementos de una lista.-->
+                    <ul>
+                        <li><b>&lt;"DOCTYPE html"&gt;:</b> Informa al navegador que versión de HTML se usó.</li>
+                        <li><b>&lt;Head&gt;:</b> Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.</li>
                         <li><b>&lt;meta charset="UFT-8"&gt;:</b> Lo utilizamos para declarar el uso de lenguas con alfabeto germánico o latino.</li>
                         <li><b>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;:</b> Muestra los sitios habilitados para Google Chrome Frame mediante la tecnología de renderizado de Google Chrome, lo que te permite acceder a las últimas funciones HTML5, así como a las funciones de rendimiento y seguridad de Google Chrome sin interrumpir en modo alguno el uso habitual del navegador</li>
                         <li><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</b> Básicamente, sirve para definir qué área de pantalla está disponible al renderizar un documento, cuál es nivel de escalado que puede realizar el usuario, así como si el navegador debe mostrarla con algún zoom inicial.</li>
@@ -73,19 +73,19 @@
                 </p>
             </section>
         </article>
-        <form action="send"><!--Esta etiqueta se utiliza para declarar un formulario. Este formulario no funcionará de momento, ya que el action="send" llama a una ejecución que no existe y por esto debería llevarnos a una página de error. Imagino que funcionara en la página de Anotaciones sobre JAvaScript porque asumo que será en esa parte del curso donde aprenderé darle funcionalidad a la página-->
+        <form action="send">
             <p>Si tienes alguna sugerencia o comentario sobre este contenido, bien sea para aportar elementos de valor y enriquecerlo, así como sugerencias constructivas para mejorarlo y aportar al conocimiento de todos, no dudes en escribirme un comentario a continuación y si quisieras contactarme, déjamelo saber con tu email y me pondré en contacto contigo</p>
-            <input type="text" placeholder="Tu nombre" required><br><br><!--Las etiquetas <input> son etiquetas de captura de datos y según su atributo type, puede recibir distintos tipos de datos pero los valores más comunes son text, email, radios, password, url, hidden, textarea, tel, search. Además, se pueden establecer como obligatorio con el atributo required-->
+            <input type="text" placeholder="Tu nombre" required><br><br>
             <input type="user GitHub" placeholder="Usuario en GitHub para seguirte" required><br><br>
             <input type="email" placeholder="tu e-mail"><br><br>
             <textarea name="comentario" rows="10" cols="50">Dime tu aporte, estaré muy agradecido por tu contribución con mi aprendizaje</textarea><br><br>
             <label><input type="checkbox" required>Acepto recibir feedback sobre mi comentario/aporte</label><br><br>
             <button type="submit">Enviar tu aporte</button><br><br>
         </form>
-        <aside><!--Etiqueta que declara lo que debería ser la barra lateral o una barra de navegación alternativa a la barra de navegación principal. Entiendo que se utiliza para mostrar contenido secundario o darle mejor usabilidad a la página. Dependiendo de la página, por ejemplo en tiendas virtuales algunas muestras enlaces a subcategorías, en otras páginas se utiliza el aside para motrar contenido publicitario. Iremos viendo con el pasar del curso otros posibles usos -->
+        <aside>
             <h2>Tabla de contenido</h2>
             <ul>
-                <li><a href="#lenguajehtml">Lenguaje HTML</a></li><!--En esta ocasión, le asignamos en el valor del atributo a la etiqueta de enlace, el id asignado a la sección dentro de esta misma página donde queremos dirigir al usuario. Hice esto porque como la página es extensa y se puede ir el usuario muy abajo, pretendo que esta tabla de contenido funcione como una barra de navegación lateral para que el usuario pueda navegar dentre de esta misma página-->
+                <li><a href="#lenguajehtml">Lenguaje HTML</a></li>
                 <li><a href="#definicion">¿Qué es HTML?</a></li>
                 <li><a href="#etiquetas">Etiquetas HTML</a></li>
             </ul>
